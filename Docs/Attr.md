@@ -43,6 +43,22 @@ Removes `className` from all selected elements.
 
 ---
 
+###pl().toggleClass(className)
+
+Toggles `className` from all selected elements.
+
+  ```javascript
+  pl('a').addClass('plainLink');
+  alert( pl('a').hasClass('plainLink') ); // true
+  
+  pl('a').toggleClass('plainLink');
+  alert( pl('a').hasClass('plainLink') ); // false
+  
+  pl('a').toggleClass('plainLink');
+  alert( pl('a').hasClass('plainLink') ); // true```
+
+---
+
 ###pl().attr(attribute [, set])
 
 If `attribute` is an object, sets attributs according to the current collection for all selected elements.

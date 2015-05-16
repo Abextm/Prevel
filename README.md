@@ -30,13 +30,13 @@ __Supported browsers:__
 
 ---
 
-__Documentation__: [Docs](/chernikovalexey/Prevel/tree/master/Docs)
+__Documentation__: [Docs](/Docs)
 
-__Full version__ for developers: [Prevel-full.js](/chernikovalexey/Prevel/blob/master/prevel-full.js)
+__Full version__ for developers: [Prevel-full.js](/prevel-full.js)
 
-__Minified version__ for production: [Prevel-min.js](/chernikovalexey/Prevel/blob/master/prevel-min.js)
+__Minified version__ for production: [Prevel-min.js](/prevel-min.js)
 
-__Extensions__ if the basic functionality seems meager to you: [Extensions](/chernikovalexey/Prevel/blob/master/Extensions)
+__Extensions__ if the basic functionality seems meager to you: [Extensions](/Extensions)
 
 ---
 

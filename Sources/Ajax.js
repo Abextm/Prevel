@@ -48,12 +48,22 @@
           if(Request.readyState === 1) {
             (params.load || ef)();
           } else if(Request.readyState === 4) {
-            var re = Request.responseText;
+            var re;
             if(params.dataType === 'json') {
               try {
-                re = pl.JSON(re);
+                re = pl.JSON(Request.responseText);
               } catch(e) {}
+            } else
+            if(params.dataType === 'blob'||params.dataType === 'arraybuffer')
+            {
+              re=Request.response;
+            } else
+            if(params.dataType === 'raw')
+            {
+              re=Request;
             }
+            else
+              re=Request.responseText;
 
             if((Request.status > 199 && Request.status < 300) || Request.status === 304) {
               (params.success || ef)(re, Request.status);
@@ -74,6 +84,10 @@
       
       // Common headers
       var headers = function(type) {
+        if(params.dataType === 'blob'||params.dataType === 'arraybuffer')
+        {
+          Request.responseType=params.dataType;
+        }
         // To identify that it's XHR
         Request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
         

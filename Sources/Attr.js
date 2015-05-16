@@ -43,6 +43,23 @@
       });
       return this;
     },
+    
+    toggleClass:function(c)
+    {
+      pl.each(this.elements, function() {
+        var cl = this[cn].split(' '),
+            from = pl.inArray(c, cl);
+        
+        // If this class does not exist
+        if(!~from)
+          cl[cl.length]=c;
+        else
+          cl.splice(from, 1);
+  
+        this[cn] = cl.join(' ');
+      });
+      return this;
+    },
 
     attr: function(attr, set) {
       attr = pl.fixAttr[attr] || attr;
