@@ -55,7 +55,8 @@ Toggles `className` from all selected elements.
   alert( pl('a').hasClass('plainLink') ); // false
   
   pl('a').toggleClass('plainLink');
-  alert( pl('a').hasClass('plainLink') ); // true```
+  alert( pl('a').hasClass('plainLink') ); // true
+  ```
 
 ---
 
