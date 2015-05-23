@@ -23,7 +23,7 @@ Creates an Ajax-request.
 
 * `type` - by default is _POST_. _POST_ or _GET_ are availiable.
 
-* `dataType` - by default is _text_. _text_, _json_ (Automatically `JSON.parse`), __blob__ (returns a `Blob`),__arraybuffer__ (returns a `ArrayBuffer`) ,or __raw__(return the raw XHR object) are availiable. 
+* `dataType` - by default is _text_. _text_, _json_ (Automatically `JSON.parse`), _blob_ (returns a `Blob`),_arraybuffer_ (returns a `ArrayBuffer`) ,or _raw_(return the raw XHR object) are availiable. 
 
 * `async` - by default is _true_. Turns asynchronous on or off.
 
